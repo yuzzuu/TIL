@@ -30,7 +30,7 @@ public class RestAPI {
 		        //보내고 결과값 받기
 		        int responseCode = conn.getResponseCode();
 		        if (responseCode == 400) {
-		            System.out.println("400:: 해당 명령을 실행할 수 없음 (실행할 수 없는 상태일 때, 엘리베이터 수와 Command 수가 일치하지 않을 때, 엘리베이터 정원을 초과하여 태울 때)");
+		            System.out.println("400:: 해당 명령을 실행할 수 없음");
 		        } else if (responseCode == 401) {
 		            System.out.println("401:: X-Auth-Token Header가 잘못됨");
 		        } else if (responseCode == 500) {
